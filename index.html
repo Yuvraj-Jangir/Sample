@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/047f393595.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- image 1 -->
+                <img src="images/flying eagle logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>Web Designer</span></p>
+                <h1>Hi, I'm <span>Yuvraj Jangir</span><br> from India<span>.</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- image 2 -->
+                    <img src="images/cat.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A meticulous and organized individual seeking an opportunity in the field of Web Development.
+                        Innovative, creative, and willing to contribute ideas and learn new things.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience & Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>> Language</span><br>Core Java</li>
+                            <li><span>> IDE's Known</span><br>Visual Studio Code, Eclipse, MySQL Workbench</li>
+                            <li><span>> Technical Skills</span><br>HTML, CSS, JavaScript, MySQL, Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>> Core JAVA Course Certified by Codeacademy</span><br>Studied variables,
+                                object-oriented Java, conditional and control flow, array and Array List, string
+                                methods, inheritance, polymorphism, loops, and debugging with hands-on assignments and
+                                projects.</li>
+                            <li><span>> HTML Course Certified by Codeacademy
+                                </span><br>Studied HTML tables, forms, semantics, elements, and structures with 3
+                                hands-on projects</li>
+                            <li><span>> Divide and Conquer, Sorting and Searching, and Randomized Algorithms An
+                                    online course by-Stanford University on Coursera
+                                </span><br>Studied Divide and Conquer, Sorting and Searching, and Randomized Algorithms
+                                like quicksort, and
+                                merge sort with their analysis and complexities</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>> B.Tech(upto 5th sem)</span><br>Computer Engineering, Bharati Vidyapeeth
+                                College Of Engineering, Pune <br>Aggregate CGPA: 8.96
+                            </li>
+                            <li><span>> HSC, CBSE Board</span><br>Percentage: 75%</li>
+                            <li><span>> SSC, CBSE Board</span><br>CGPA: 9.8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita ratione iste possimus
+                        repellendus dicta!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita ratione iste possimus
+                        repellendus dicta!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita ratione iste possimus
+                        repellendus dicta!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Work -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/cat.png">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, soluta.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cat.png">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, soluta.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cat.png">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, soluta.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- Contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div999 class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> yuvraj2000jangir@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +917300126699</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Yuvraj-Jangir/Sample.git" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/YuvrajJangir_?t=w2NTYjzxIhkqwhg_-Mz-_Q&s=09" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/yjismyname" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yuvraj-jangir" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="/reg" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright <span>®</span> Yuvraj</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
